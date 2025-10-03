@@ -1,0 +1,24 @@
+# Arquivos de Dependências do Node
+node_modules
+/npm-debug.log
+.npm/
+
+# Logs e Cache
+*.log
+npm-debug.log*
+.eslintcache
+.history/
+coverage/
+
+# Variáveis de Ambiente e Arquivos de Configuração Local
+.env
+.env.local
+.vscode/
+
+# Build e Output (se o projeto crescer)
+dist/
+build/
+
+# IDE e Outros Sistemas Operacionais
+.DS_Store # macOS
+Thumbs.db # Windows
