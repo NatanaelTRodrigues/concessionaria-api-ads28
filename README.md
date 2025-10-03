@@ -3,12 +3,12 @@
 ##  Status do Projeto
  **CONCLUÍDO**
 
-## 📝 Descrição
+##  Descrição
 API RESTful desenvolvida em **Node.js** com framework **Express**, seguindo arquitetura baseada em recursos (Resource-Oriented Architecture). O projeto simula o sistema de gerenciamento de uma concessionária de veículos, implementando as cinco entidades principais com operações **CRUD** (Create, Read, Update, Delete) completas. Os dados são armazenados temporariamente em memória (Arrays).
 
 ---
 
-## 👥 Equipe de Desenvolvimento (Colaboradores)
+##  Equipe de Desenvolvimento (Colaboradores)
 
 Abaixo estão os nomes, matrículas e usuários GitHub dos membros da equipe que contribuíram para o projeto. O histórico de commits no Git reflete a distribuição de tarefas abaixo.
 
@@ -25,12 +25,12 @@ Abaixo estão os nomes, matrículas e usuários GitHub dos membros da equipe que
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 * **Node.js** (Ambiente de Execução)
 * **Express.js** (Framework Web)
 * **Nodemon** (Dev Dependency para *live-reload*)
 
-## 📦 Como Instalar e Executar
+##  Como Instalar e Executar
 
 Siga os passos abaixo para colocar a API em funcionamento na sua máquina:
 
@@ -52,7 +52,7 @@ Bash
 npm start
 A API estará acessível em http://localhost:3000.
 
-🔗 Endpoints da API (Detalhes do CRUD)
+ Endpoints da API (Detalhes do CRUD)
 Todos os endpoints utilizam o prefixo http://localhost:3000/.
 
 Recurso	Método HTTP	Rota Base	Exemplo de Rota	Funcionalidade	Validação de Dados
@@ -63,7 +63,7 @@ Modelos/Marcas	GET / POST / PUT / DELETE	/modelos	/modelos/101	Cadastro de model
 Vendas	GET / POST / PUT / DELETE	/vendas	/vendas/1	Registro de transações de venda.	Campos obrigatórios e validação de existência dos IDs de Veículo, Cliente e Vendedor.
 
 Exportar para as Planilhas
-📐 Testes e Documentação Adicional
+ Testes e Documentação Adicional
 Todos os endpoints podem ser testados utilizando o arquivo de coleção exportado:
 
 Arquivo de Coleção: postman_collection.json
