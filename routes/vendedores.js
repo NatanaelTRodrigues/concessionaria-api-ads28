@@ -4,7 +4,7 @@ const router = express.Router();
 // Importa o array e o nextId do modelo
 let { vendedores, nextId } = require('../models/vendedores'); 
 
-// Middleware de Validação Obrigatória
+
 const validateVendedor = (req, res, next) => {
     const { nome, matricula, area } = req.body;
     
@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
 });
 
 // 2. POST /vendedores - Criar novo
-// Use o validateVendedor aqui
+
 router.post('/', validateVendedor, (req, res) => {
     const novoVendedor = {
         id: nextId++,
@@ -46,12 +46,13 @@ router.get('/:id', (req, res) => {
 });
 
 // 4. PUT /vendedores/:id - Atualizar
-// Use o validateVendedor aqui
+
 router.put('/:id', validateVendedor, (req, res) => {
     const id = parseInt(req.params.id);
     const index = vendedores.findIndex(v => v.id === id);
 
     if (index !== -1) {
+
         vendedores[index] = { ...vendedores[index], ...req.body, id: id };
         res.status(200).json(vendedores[index]);
     } else {
@@ -63,7 +64,7 @@ router.put('/:id', validateVendedor, (req, res) => {
 router.delete('/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const initialLength = vendedores.length;
-    // O array global é atualizado
+in
     vendedores = vendedores.filter(v => v.id !== id);
 
     if (vendedores.length < initialLength) {
